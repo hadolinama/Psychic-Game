@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTR-8">
+		<title>A new rock paper scissors</title>
+	</head>
+	<body>
+		
+	<script>
+		var Arraychoices = ["r", "p", "s", "b", "q"];
+
+		document.onkeyup = function(event) {
+
+			var UserChoices = event.key;
+
+			computerChoices = Arraychoices[Math.floor(Math.random() * Arraychoices.length)];
+    
+
+			if ((UserChoices === "r") || (UserChoices === "p") || (UserChoices === "s")  || (UserChoices === "b")  || (UserChoices === "q"))
+
+				alert("UserChoices: " + UserChoices);
+				alert("computerChoices: " + computerChoices);
+		}
+
+	</script>
+
+	</body>
+
+</html>
